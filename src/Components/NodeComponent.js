@@ -97,58 +97,58 @@ const Node=()=>{
     const onNodeDragStop = (event, node) => console.log('drag stop');
     return(
            <div className='flow-container'>
-             <div className="main-container" style={{width:'40%',height:'600px'}}>
-                <div className="task-input-div">
-                    <p className="text-para">
-                        Task Assigned To:
-                    </p>
-                    <input className="user-id-field"
-                        placeholder="Enter assignie User ID"
-                        onChange={(nextUserID)=>setNextUser(nextUserID.target.value)}
-                    />
-                </div>
-                <div className="task-input-div">
-                    <p className="text-para">
-                        Task Name:
-                    </p>
-                    <input className="user-id-field"
-                        placeholder="Enter Task Name"
-                        onChange={(taskname)=>settaskName(taskname.target.value)}
-                    />
-                </div>
-                <div className="task-input-div">
-                    <p className="text-para">
-                        Task Description:
-                    </p>
-                    <input className="user-id-field"
-                        placeholder="Enter Task Description"
-                        onChange={(taskDesc)=>settaskDesc(taskDesc.target.value)}
-                    />
-                </div>
-                <div className="task-input-div">
-                    <p className="text-para">
-                        Tentative days Needed:
-                    </p>
-                    <input className="user-id-field"
-                        placeholder="Enter Days"
-                        onChange={(days)=>setDays(days.target.value)}
-                    />
-                </div>
-                <div>
-                <div className='button-divs'>
-                    <div className='accept-button' 
-                      onClick={()=>createNode()}
-                    >
-                        <p>Save</p>
-                    </div>
-                    <div className='accept-button'  
-                    onClick={()=>print()}
-                    >
-                        <p>Finish</p>
-                    </div>
-                    </div>
-                </div>
-            </div> 
+              <div className="main-container" style={{width:'40%',height:'600px'}}>
+                  <div className="task-input-div">
+                      <p className="text-para">
+                          Task Assigned To:
+                      </p>
+                      <input className="user-id-field"
+                          placeholder="Enter assignie User ID"
+                          onChange={(nextUserID)=>setNextUser(nextUserID.target.value)}
+                      />
+                  </div>
+                  <div className="task-input-div">
+                      <p className="text-para">
+                          Task Name:
+                      </p>
+                      <input className="user-id-field"
+                          placeholder="Enter Task Name"
+                          onChange={(taskname)=>settaskName(taskname.target.value)}
+                      />
+                  </div>
+                  <div className="task-input-div">
+                      <p className="text-para">
+                          Task Description:
+                      </p>
+                      <input className="user-id-field"
+                          placeholder="Enter Task Description"
+                          onChange={(taskDesc)=>settaskDesc(taskDesc.target.value)}
+                      />
+                  </div>
+                  <div className="task-input-div">
+                      <p className="text-para">
+                          Tentative days Needed:
+                      </p>
+                      <input className="user-id-field"
+                          placeholder="Enter Days"
+                          onChange={(days)=>setDays(days.target.value)}
+                      />
+                  </div>
+                  <div>
+                  <div className='button-divs'>
+                      <div className='accept-button' 
+                        onClick={()=>createNode()}
+                      >
+                          <p>Save</p>
+                      </div>
+                      <div className='accept-button'  
+                      onClick={()=>print()}
+                      >
+                          <p>Finish</p>
+                      </div>
+                      </div>
+                  </div>
+              </div> 
              <div style={{width:'60%',height:'600px',backgroundColor:'#e0eaff'}}>
               <ReactFlowProvider >
                   <ReactFlow

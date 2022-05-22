@@ -38,7 +38,9 @@
     /* justify-self: center; */
     font-weight: bold;
     /* background-color: red; */
+    /* position: absolute; */
     padding: 5px;
+    /* z-index: 2px; */
 }
 .buttons-container{
     display: flex;
@@ -47,4 +49,36 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+.admin-workflow-container{
+    display: flex;
+}
+.button-div{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+.success {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.success:hover {
+  background-color: #009dff;
+  color: rgb(255, 255, 255);
+  box-shadow: -2px 2px 20px rgb(85, 85, 85);
 }
